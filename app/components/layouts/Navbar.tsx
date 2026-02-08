@@ -40,7 +40,7 @@ export default function Navbar() {
           }`}
       >
         <Container>
-          <div className="flex h-20 items-center justify-between px-2 lg:px-0">
+          <div className="flex h-20 items-center justify-between px-2 2xl:px-0">
 
            <div className="flex items-center gap-8">
               <Link href="/" className="flex items-center gap-3">
@@ -72,16 +72,16 @@ export default function Navbar() {
 
             {/* Right / Actions */}
             <div className="flex items-center gap-3">
-              <Button className="hidden sm:inline-flex bg-primary px-5 py-2.5 text-sm font-semibold">
+              <Button variant={"outline"} className="hidden sm:inline-flex px-5 py-2.5 text-sm font-semibold">
                 Get Started
               </Button>
 
-              <Button
+              {/* <Button
                 variant="outline"
                 className="hidden sm:inline-flex border-white/20"
               >
                 EN
-              </Button>
+              </Button> */}
 
               {/* Mobile menu button */}
               <button

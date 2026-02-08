@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 export default function DemoProjects() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-10">
+    <section className="py-10">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {demoProjectData.map((project) => (
           <div
             key={project._id}
-            className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            className="group relative overflow-hidden border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
             {/* Image */}
             <div className="relative h-[260px] w-full overflow-hidden bg-gray-100">
@@ -38,7 +38,7 @@ export default function DemoProjects() {
               <Link
                 href={project.demoUrl}
                 target="_blank"
-                className="inline-flex w-fit items-center gap-2  bg-[#44C7F4] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#2E58A2]"
+                className="inline-flex w-fit items-center gap-2  bg-[#F375C2]/80 px-4 py-2 text-sm font-medium text-white transition hover:bg-[#F375C2]"
               >
                 View Live Demo
                 <span className="transition group-hover:translate-x-1">→</span>

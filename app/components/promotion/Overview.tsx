@@ -1,0 +1,18 @@
+
+const Overview = () => {
+  return (
+    <div className="shadow-lg shadow-[#540863]/20 rounded-lg overflow-hidden">
+      <div className="relative">
+        <iframe
+          width="1280" height="720"
+          src="https://www.youtube.com/embed/hYSmkjJXoww"
+          title="Overview Video"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Overview;

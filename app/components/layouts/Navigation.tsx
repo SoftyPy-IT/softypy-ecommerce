@@ -17,7 +17,7 @@ export const NavbarData: TNavbar[] = [
   },
   {
     title: "Pricing",
-    href: "/services",
+    href: "/pricing",
     target: "_self",
   },
   {
