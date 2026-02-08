@@ -14,7 +14,7 @@ export default function Navbar() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const isHome = pathname === "/" || pathname === "/bn"
+  const isHome = pathname === "/" || pathname === "/bn" || pathname === "/en"
 
   useEffect(() => {
     const handleScroll = () => {
