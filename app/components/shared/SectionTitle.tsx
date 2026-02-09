@@ -17,7 +17,7 @@ const SectionTitle = ({
   subtitle,
   align = 'left',
   className,
-  highlightColor = 'bg-blue-500',
+  highlightColor = 'bg-white',
   icon,
 }: SectionTitleProps) => {
   return (
@@ -47,16 +47,16 @@ const SectionTitle = ({
         )}
       >
         {/* Icon (optional) */}
-        {icon && <span className="text-2xl text-blue-500">{icon}</span>}
+        {icon && <span className="text-2xl">{icon}</span>}
 
         {/* Title */}
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
           {title}
         </h2>
       </div>
 
       {/* Subtitle */}
-      {subtitle && <p className="text-gray-600 mt-1 text-sm md:text-base">{subtitle}</p>}
+      {subtitle && <p className="mt-1 text-sm md:text-base">{subtitle}</p>}
     </div>
   );
 };

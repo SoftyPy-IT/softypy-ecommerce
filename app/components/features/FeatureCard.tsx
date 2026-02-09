@@ -6,7 +6,7 @@ export default function FeatureCard({ feature }: { feature: TFeatures }) {
   return (
     <div
       className="
-        group relative rounded-2xl border bg-background p-8
+        group relative border bg-background p-8
         shadow-sm transition-all duration-300
         hover:-translate-y-1 hover:shadow-xl
         focus-within:ring-2 focus-within:ring-primary/40
@@ -16,10 +16,9 @@ export default function FeatureCard({ feature }: { feature: TFeatures }) {
         {/* Icon */}
         <div
           className="
-          flex h-12 w-12 items-center justify-center
-          rounded-xl bg-purple-500/10 text-purple-500
+          flex h-12 w-12 items-center justify-center bg-[#540863]/10 text-[#540863]
           transition-colors duration-300
-          group-hover:bg-purple-500 group-hover:text-white
+          group-hover:bg-[#540863] group-hover:text-white
         "
         >
           <Icon className="h-6 w-6" />
