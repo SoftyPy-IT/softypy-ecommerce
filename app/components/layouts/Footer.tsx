@@ -3,8 +3,9 @@ import Link from "next/link";
 import Container from "../shared/Container";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import logo from "@/public/assets/logo/softypy-online.png";
+import logo from "@/public/assets/logo/logo.png";
 import Image from "next/image";
+import { NavbarData } from "./Navigation";
 
 export default function Footer() {
 
@@ -40,23 +41,9 @@ export default function Footer() {
   ];
 
 
-  const quickLinks = [{
-    id: 1,
-    name: "About Us",
-    href: "/about",
-  }, {
-    id: 2,
-    name: "Services",
-    href: "/services",
-  }, {
-    id: 3,
-    name: "Contact",
-    href: "/contact",
-  }]
-
 
   return (
-    <footer className="bg-[#540863]">
+    <footer className="bg-[#D2E9D9]">
       <Container className="px-4 py-10 2xl:px-0">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
@@ -68,7 +55,7 @@ export default function Footer() {
               height={100}
               priority
             />
-            <p className="text-sm text-white/80 max-w-sm">
+            <p className="text-sm max-w-sm">
               Building reliable digital products with modern technologies and
               clean design.
             </p>
@@ -76,14 +63,19 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="text-base sm:text-sm font-semibold uppercase tracking-wide text-white">
+            <h4 className="text-base sm:text-sm font-semibold uppercase tracking-wide ">
               Quick Links
             </h4>
-            <div className="flex flex-col gap-2 text-sm text-white/80">
+            <div className="flex flex-col gap-2 text-sm">
               {
-                quickLinks.map((item) => (
-                  <Link key={item.id} href={item.href} className="hover:text-white transition">
-                    {item.name}
+                NavbarData.map((item, idx) => (
+                  <Link key={idx} href={item.href}>
+
+                    {
+                      item.title !== "Home" && (
+                        <span className="hover:text-purple-600">{item.title}</span>
+                      )
+                    }
                   </Link>
                 ))
               }
@@ -92,18 +84,17 @@ export default function Footer() {
 
           {/* Social */}
           <div className="space-y-3">
-            <h4 className="text-sm font-semibold uppercase tracking-wide text-white">
+            <h4 className="text-sm font-semibold uppercase tracking-wide ">
               Follow Us
             </h4>
             <div className="flex items-center gap-4">
-              {icons.map((item) => (
+              {icons.map((item, idx) => (
                 <Link
-                  key={item.id}
+                  key={idx}
                   href={item.href}
                   target="_blank"
                   aria-label={item.name}
-                  className={`rounded-full bg-white/10 p-2 text-white/80 transition
-                  hover:bg-white hover:scale-105 ${item.hover}`}
+                  className={`rounded-full bg-gray-100 p-2 transition hover:scale-105 ${item.hover}`}
                 >
                   <item.icon className="h-5 w-5" />
                 </Link>
@@ -113,10 +104,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <Separator className="my-8" />
+        <Separator className="my-8 bg-gray-900" />
 
         {/* Bottom */}
-        <div className="flex flex-col items-center justify-between gap-2 text-sm text-white/80 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-2 text-sm md:flex-row">
           <p>
             © {new Date().getFullYear()} SoftyPy. All rights reserved.
           </p>

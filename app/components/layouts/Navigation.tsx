@@ -6,6 +6,11 @@ export interface TNavbar {
 
 export const NavbarData: TNavbar[] = [
   {
+    title: "Home",
+    href: "/",
+    target: "_self",
+  },
+  {
     title: "About Us",
     href: "https://softypy.com",
     target: "_blank",

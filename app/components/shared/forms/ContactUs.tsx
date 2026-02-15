@@ -1,44 +1,77 @@
-"use client"
-import AppForm from './AppFrom'
-import TextInputField from '../Input-fields/TextInputField';
-import { Button } from '@/components/ui/button';
-import TextAreaField from '../Input-fields/TextAreaField';
-import Image from 'next/image';
-import contact from '@/public/assets/contact/contact_us.png';
+"use client";
+
+import AppForm from "./AppFrom";
+import TextInputField from "../Input-fields/TextInputField";
+import TextAreaField from "../Input-fields/TextAreaField";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import contact from "@/public/assets/contact/contact_us.png";
 
 export default function ContactUs() {
-
   const onSubmit = (values: any, reset: () => void) => {
     console.log(values);
     reset();
   };
 
   return (
-    <div className='flex gap-4 flex-col md:flex-row items-center px-2 2xl:px-0'>
-      <div className='w-full md:w-1/2'>
-        <AppForm onSubmit={onSubmit}>
-          <div className='flex flex-col gap-4'>
-            <div>
-              <TextInputField name='name' label='Name' placeholder='Enter your name' />
-            </div>
-            <div>
-              <TextInputField name='email' label='Email' placeholder='Enter your email' />
-            </div>
-            <div>
-              <TextInputField name='whatsapp' label='Whatsapp' placeholder='Enter whatsapp number' />
-            </div>
-            <div>
-              <TextAreaField name='message' label='Message' placeholder='Enter your message' />
-            </div>
-            <div>
-              <Button type='submit' className='w-full bg-[#540863]'>Send Message</Button>
-            </div>
+    <section className="py-16 lg:py-24">
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+          {/* Contact Form */}
+          <div className="bg-[#D2CBF1] shadow-lg rounded-2xl p-8 lg:p-12 transition-all duration-500">
+
+
+            <AppForm onSubmit={onSubmit}>
+              <div className="space-y-6">
+
+                <TextInputField
+                  name="name"
+                  label="নাম"
+                  placeholder="আপনার নাম লিখুন"
+                />
+
+                <TextInputField
+                  name="email"
+                  label="ই-মেইল"
+                  placeholder="আপনার ই-মেইল লিখুন"
+                />
+
+                <TextInputField
+                  name="whatsapp"
+                  label="ওয়াটসঅ্যাপ"
+                  placeholder="ওয়াটসঅ্যাপ নাম্বার"
+                  required
+                />
+
+                <TextAreaField
+                  name="message"
+                  label="বার্তা"
+                  placeholder="আপনার বার্তা লিখুন"
+                />
+
+                <Button
+                  type="submit"
+                  className="w-full h-12 text-base font-semibold bg-purple-600 hover:bg-purple-700 transition-all duration-300"
+                >
+                  পাঠান
+                </Button>
+
+              </div>
+            </AppForm>
           </div>
-        </AppForm>
-      </div>
-      <div className='w-full md:w-1/2'>
-        <Image src={contact} alt='contact' width={500} height={500} />
-      </div>
-    </div>
-  )
+
+          {/* Image Side */}
+          <div className="relative flex justify-center">
+            <Image
+              src={contact}
+              alt="Contact Illustration"
+              className="w-full max-w-lg object-contain"
+              priority
+            />
+          </div>
+
+        </div>
+    </section>
+  );
 }

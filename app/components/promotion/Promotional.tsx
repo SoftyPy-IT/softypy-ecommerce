@@ -14,13 +14,13 @@ export default function Promotional() {
             title='কেন সফটপিআই?'
             subtitle='বিস্তারিত জানতে ভিডিওটি দেখুন — আপনি নিজেই বুঝে যাবেন কেন আমাদের সলিউশন আলাদা!'
             align='center'
-            highlightColor='bg-[#540863]'
+            highlightColor='bg-[#ad46ff]'
           />
 
           <div className='flex justify-center items-center'>
             <Tabs defaultValue="overview">
               <div className='flex justify-center items-center'>
-                <TabsList variant="default" className='bg-[#540863] my-4 rounded-none' >
+                <TabsList variant="default" className='bg-[#ad46ff] my-4 rounded-none' >
                   <TabsTrigger value="overview" className='text-white rounded-none'>সম্পর্কিত ভিডিও</TabsTrigger>
                   <TabsTrigger value="details" className='text-white rounded-none'>বিস্তারিত</TabsTrigger>
                 </TabsList>

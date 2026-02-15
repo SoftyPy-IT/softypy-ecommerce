@@ -38,7 +38,7 @@ export default function DemoProjects() {
               <Link
                 href={project.demoUrl}
                 target="_blank"
-                className="inline-flex w-fit items-center gap-2  bg-[#92487A] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#540863]"
+                className="inline-flex w-fit items-center gap-2  bg-[#5c9e70] px-4 py-2 text-sm font-medium text-white transition shadow-lg hover:bg-[#477a57]"
               >
                 View Live
                 <span className="transition group-hover:translate-x-1">→</span>

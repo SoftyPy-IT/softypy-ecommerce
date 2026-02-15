@@ -37,11 +37,11 @@ export default function Stats() {
     <div className="flex items-center justify-center gap-8">
       {stats.map((item) => (
         <div key={item.label}>
-          <p className="text-xl md:text-3xl font-bold text-white">
+          <p className="text-xl md:text-3xl font-bold text-[#5c9e70]">
             <CountUp end={item.value} />
             {item.suffix}
           </p>
-          <p className="mt-1 text-xs md:text-sm text-white/80">
+          <p className="mt-1 text-xs md:text-sm">
             {item.label}
           </p>
         </div>

@@ -20,10 +20,10 @@ export default function QA() {
           title="সর্বাধিক জিজ্ঞাসিত প্রশ্নাবলী"
           subtitle="আপনার মনে সফটওয়্যারটি নিয়ে যত প্রশ্ন আছে, তার উত্তর এখানে পাবেন।"
           align="center"
-          highlightColor='bg-[#540863]'
+          highlightColor='bg-[#ad46ff]'
         />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-4 py-10">
           <div>
             <Accordion type="single" collapsible>
               {qaData.map((item: QAItem, index: number) => (

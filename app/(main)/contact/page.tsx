@@ -6,7 +6,7 @@ export default function page() {
   return (
 
     <Container className="px-2 2xl:px-0">
-      <SectionTitle title="Contact Us" subtitle="Get in touch with us" align="center" highlightColor="bg-[#540863]" />
+      <SectionTitle title="যোগাযোগ করুন" subtitle="আপনার যেকোনো প্রশ্ন বা প্রজেক্ট আইডিয়া আমাদের জানাতে পারেন" align="center" highlightColor="bg-[#540863]" />
       <ContactUs />
     </Container>
   )

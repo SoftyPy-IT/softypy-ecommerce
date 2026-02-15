@@ -15,7 +15,7 @@ export default function FeedbackCard({ item }: FeedbackCardProps) {
   return (
     <Card
       key={item._id}
-      className="flex h-full flex-col rounded-none transition-shadow duration-300 shadow-[#540863] hover:shadow-lg"
+      className="flex h-96 flex-col rounded-none transition-shadow duration-300 shadow-[#5c9e70] hover:shadow-lg"
     >
       {/* Header / Logo */}
       <CardHeader className="flex items-center justify-center pb-2">
@@ -52,7 +52,7 @@ export default function FeedbackCard({ item }: FeedbackCardProps) {
               asChild
               size="sm"
               variant="outline"
-              className="gap-1 rounded-none hover:bg-[#540863] hover:text-white"
+              className="gap-1 rounded-none hover:bg-[#5c9e70] hover:text-white"
             >
               <a
                 href={item.websiteLink}

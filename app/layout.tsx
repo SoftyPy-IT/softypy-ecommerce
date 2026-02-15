@@ -9,22 +9,18 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "SoftyPy-Online",
+  title: "SoftyPy",
   description: "The Best Software Company in Bangladesh",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params
-}: Readonly<{
+}: {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}>) {
-
-  const { lang } = await params;
+}) {
 
   return (
-    <html lang={lang}>
+    <html lang="en">
       <body
         className={`${roboto.variable} antialiased`}
       >

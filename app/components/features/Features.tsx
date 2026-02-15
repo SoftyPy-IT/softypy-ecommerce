@@ -15,7 +15,7 @@ export default function Features() {
 
   return (
     <section className="relative" style={{ backgroundImage: `url(${bg.src})` }}>
-      <div className="absolute inset-0 bg-[#805CC2]/60" />
+      <div className="absolute inset-0 bg-[#9c89f0]/40" />
       <Container className="relative z-10 px-2 py-10 2xl:p-0">
         <div className="py-10">
           <SectionTitle

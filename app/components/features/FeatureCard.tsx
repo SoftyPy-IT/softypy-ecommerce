@@ -16,9 +16,9 @@ export default function FeatureCard({ feature }: { feature: TFeatures }) {
         {/* Icon */}
         <div
           className="
-          flex h-12 w-12 items-center justify-center bg-[#540863]/10 text-[#540863]
+          flex h-12 w-12 items-center justify-center bg-[#5c9e70] text-white
           transition-colors duration-300
-          group-hover:bg-[#540863] group-hover:text-white
+          group-hover:bg-white group-hover:text-[#5c9e70]
         "
         >
           <Icon className="h-6 w-6" />
