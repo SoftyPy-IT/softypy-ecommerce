@@ -27,7 +27,7 @@ export const NavbarData: TNavbar[] = [
   },
   {
     title: "Contact Us",
-    href: "/contact",
-    target: "_self",
+    href: "https://softypy.com/contact",
+    target: "_blank",
   },
 ];

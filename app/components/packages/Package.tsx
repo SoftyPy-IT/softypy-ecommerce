@@ -62,7 +62,7 @@ export default function Package() {
                 </ul>
 
                 {/* CTA */}
-                <Link href={"/contact"}>
+                <Link href={"https://softypy.com/contact"} target="_blank">
                   <LinearButton title="শুরু করুন" icon={<ArrowRight />} iconAlign="right" />
                 </Link>
               </div>
