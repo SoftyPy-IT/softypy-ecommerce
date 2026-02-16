@@ -9,8 +9,8 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "SoftyPy",
-  description: "The Best Software Company in Bangladesh",
+  title: "SoftyPy | The Best Smart Solution",
+  description: "The Best Smart Solution Company in Bangladesh",
 };
 
 export default function RootLayout({
