@@ -7,53 +7,51 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://e-commerce.softypy.com"),
+
   title: {
-    default: "SoftyPy | The Best Smart Solution",
+    default: "SoftyPy | E-commerce Growth Experts",
     template: "%s | SoftyPy",
   },
+
   description:
-    "SoftyPy is a smart e-commerce marketing and digital solution company helping businesses scale in Bangladesh and beyond.",
+    "SoftyPy helps brands scale with high-performance e-commerce marketing, branding, and digital growth solutions.",
+
   openGraph: {
-    title: "SoftyPy | Smart E-commerce Solutions",
+    title: "SoftyPy | E-commerce Growth Experts",
     description:
-      "Scale your business with SoftyPy’s modern e-commerce marketing, branding, and digital growth solutions.",
+      "Scale your e-commerce brand with SoftyPy’s performance-driven marketing solutions.",
     url: "https://e-commerce.softypy.com",
     siteName: "SoftyPy",
+    type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://e-commerce.softypy.com/og-image.jpg", // absolute URL
         width: 1200,
         height: 630,
-        alt: "SoftyPy Smart Solutions",
+        alt: "SoftyPy E-commerce Marketing",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "SoftyPy | Smart E-commerce Solutions",
+    title: "SoftyPy | E-commerce Growth Experts",
     description:
-      "Modern e-commerce marketing and digital growth strategies by SoftyPy.",
-    images: ["/og-image.jpg"],
+      "Performance-driven e-commerce marketing solutions by SoftyPy.",
+    images: ["https://e-commerce.softypy.com/og-image.jpg"],
   },
 };
-
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} antialiased`}
-      >
+      <body className={`${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>
