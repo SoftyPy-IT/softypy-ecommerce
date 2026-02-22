@@ -15,12 +15,8 @@ export const plans: Plan[] = [
     description:
       "ছোট ব্যবসার জন্য উপযুক্ত একটি স্টার্টার প্যাকেজ, যেখানে প্রয়োজনীয় ফিচার ও স্থিতিশীল পারফরম্যান্স নিশ্চিত করা হয়েছে।",
     features: [
-      {
-        text: "জাভাস্ক্রিপ্ট-ভিত্তিক মোবাইল ফ্রেন্ডলি ওয়েবসাইট",
-        included: true,
-      },
+      { text: "জাভাস্ক্রিপ্ট-ভিত্তিক মোবাইল ফ্রেন্ডলি ওয়েবসাইট", included: true },
       { text: "সুপার ফাস্ট ও সিকিউর ওয়েবসাইট", included: true },
-      { text: "ইজি চেকআউট সিস্টেম", included: false },
       { text: "রিপোর্টিং সেলস ড্যাশবোর্ড", included: true },
       { text: "বিক্রয় রিপোর্টিং ড্যাশবোর্ড", included: true },
       { text: "অ্যাডভান্সড প্রোডাক্ট ম্যানেজমেন্ট", included: true },
@@ -34,7 +30,6 @@ export const plans: Plan[] = [
       { text: "ইনকমপ্লিট অর্ডার লিস্ট", included: true },
       { text: "ডেলিভারি চার্জ কন্ট্রোল", included: true },
       { text: "একাধিক পেমেন্ট মেথড", included: true },
-      { text: "অ্যাডভান্স পেমেন্ট সিস্টেম", included: false },
       { text: "ফেসবুক পিক্সেল ইন্টিগ্রেশন", included: true },
       { text: "ফেসবুক সার্ভার-সাইড ট্র্যাকিং", included: true },
       { text: "গুগল ট্যাগ ম্যানেজার ইন্টিগ্রেশন", included: true },
@@ -59,6 +54,7 @@ export const plans: Plan[] = [
       { text: "ক্যাম্পেইন ম্যানেজমেন্ট সিস্টেম", included: false },
       { text: "অর্ডার আইপি ব্লকিং ও আইপি লিমিট", included: false },
       { text: "ইমেইল ও এসএমএসে অর্ডার নোটিফিকেশন", included: false },
+      { text: "অ্যাডভান্স পেমেন্ট সিস্টেম", included: false },
       { text: "রিওয়ার্ড ম্যানেজমেন্ট সিস্টেম", included: false },
       { text: "ব্লগ ও ব্লগ কমেন্ট সিস্টেম", included: false },
       { text: "ইনকাম ম্যানেজমেন্ট সিস্টেম", included: false },
@@ -74,14 +70,10 @@ export const plans: Plan[] = [
     description:
       "বর্ধনশীল ব্যবসার জন্য একটি শক্তিশালী অল-ইন-ওয়ান সমাধান, যেখানে রয়েছে উন্নত ফিচার, অটোমেশন এবং সম্পূর্ণ নিয়ন্ত্রণ।",
     features: [
-      {
-        text: "জাভাস্ক্রিপ্ট-ভিত্তিক মোবাইল ফ্রেন্ডলি ওয়েবসাইট",
-        included: true,
-      },
+      { text: "জাভাস্ক্রিপ্ট-ভিত্তিক মোবাইল ফ্রেন্ডলি ওয়েবসাইট", included: true },
       { text: "সুপার ফাস্ট ও সিকিউর ওয়েবসাইট", included: true },
       { text: "ইজি চেকআউট সিস্টেম", included: true },
       { text: "রিপোর্টিং সেলস ড্যাশবোর্ড", included: true },
-      { text: "বিক্রয় রিপোর্টিং ড্যাশবোর্ড", included: false },
       { text: "অ্যাডভান্সড প্রোডাক্ট ম্যানেজমেন্ট", included: true },
       { text: "সম্পূর্ণ অর্ডার ম্যানেজমেন্ট", included: true },
       { text: "অটো কুরিয়ার ম্যানেজমেন্ট", included: true },
@@ -93,7 +85,6 @@ export const plans: Plan[] = [
       { text: "ইনকমপ্লিট অর্ডার লিস্ট", included: true },
       { text: "ডেলিভারি চার্জ কন্ট্রোল", included: true },
       { text: "একাধিক পেমেন্ট মেথড", included: true },
-      { text: "অ্যাডভান্স পেমেন্ট সিস্টেম", included: true },
       { text: "ফেসবুক পিক্সেল ইন্টিগ্রেশন", included: true },
       { text: "ফেসবুক সার্ভার-সাইড ট্র্যাকিং", included: true },
       { text: "গুগল ট্যাগ ম্যানেজার ইন্টিগ্রেশন", included: true },
@@ -118,6 +109,7 @@ export const plans: Plan[] = [
       { text: "ক্যাম্পেইন ম্যানেজমেন্ট সিস্টেম", included: true },
       { text: "অর্ডার আইপি ব্লকিং ও আইপি লিমিট", included: true },
       { text: "ইমেইল ও এসএমএসে অর্ডার নোটিফিকেশন", included: true },
+      { text: "অ্যাডভান্স পেমেন্ট সিস্টেম", included: true },
       { text: "রিওয়ার্ড ম্যানেজমেন্ট সিস্টেম", included: true },
       { text: "ব্লগ ও ব্লগ কমেন্ট সিস্টেম", included: true },
       { text: "ইনকাম ম্যানেজমেন্ট সিস্টেম", included: true },
