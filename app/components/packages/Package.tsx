@@ -30,14 +30,13 @@ export default function Package() {
             return (
               <div
                 key={idx}
-                className={`
-                relative flex flex-col h-[600px] rounded-lg border p-6 transition-all
-                ${isPremium ? "border-[#5c9e70] shadow-xl" : "border-gray-300 shadow-lg hover:shadow-2xl"}
-              `}
+                className={`relative flex flex-col h-[600px] border p-6 transition-all`}
               >
                 {/* Header */}
-                <h3 className="text-[#5c9e70] text-2xl font-semibold mb-2">{plan.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{plan.description}</p>
+                <div className="bg-linear-to-br from-[#ad46ff] to-[#5c9e70] p-4 mb-4">
+                  <h3 className="text-white text-2xl font-semibold mb-2">{plan.title}</h3>
+                  <p className="text-white/80 mb-4 text-sm">{plan.description}</p>
+                </div>
 
                 {/* Features - scrollable */}
                 <ul className="flex-1 overflow-y-auto space-y-3 mb-4 pr-2">

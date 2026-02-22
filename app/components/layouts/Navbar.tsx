@@ -78,7 +78,7 @@ export default function Navbar() {
               <Link href="/pricing" className="hidden sm:inline-flex px-5 py-2.5 text-sm font-semibold uppercase">
               <Button
                 variant="outline"
-                className="hidden sm:inline-flex px-5 py-2.5 text-sm font-semibold uppercase"
+                className="hidden rounded-none sm:inline-flex px-5 py-2.5 text-sm font-semibold uppercase"
               >
                 Get Started
               </Button>
