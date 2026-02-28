@@ -1,41 +1,43 @@
-"use client";
-import { ArrowRight, Check, X } from "lucide-react";
-import Container from "../shared/Container";
-import SectionTitle from "../shared/SectionTitle";
-import { plans } from "./package-data";
-import bg from "@/public/assets/section-image/section-bg-4.webp";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import LinearButton from "../shared/actions/LinearButton";
+'use client';
+import { ArrowRight, Check, X } from 'lucide-react';
+import Container from '../shared/Container';
+import SectionTitle from '../shared/SectionTitle';
+import { plans } from './package-data';
+import bg from '@/public/assets/section-image/section-bg-4.webp';
+import Link from 'next/link';
+import LinearButton from '../shared/actions/LinearButton';
 
 export default function Package() {
   return (
-    <section className='py-10 relative' style={{
-      backgroundImage: `url(${bg.src})`, backgroundRepeat: "no-repeat",
-      backgroundPosition: "center", backgroundSize: "cover"
-    }}>
+    <section
+      className="py-10 relative"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+    >
       <div className="absolute inset-0 bg-linear-to-br from-white/90 via-white/80 to-white/90" />
       <Container className="py-10 px-2 2xl:p-0 relative z-10">
         <SectionTitle
           title="আমাদের প্যাকেজসমূহ"
           subtitle="আপনার ব্যবসার জন্য সেরা প্যাকেজটি বেছে নিন।"
           align="center"
-          highlightColor='bg-[#ad46ff]'
+          highlightColor="bg-[#ad46ff]"
         />
 
         <div className="grid gap-8 md:grid-cols-2 mt-12 ">
           {plans.map((plan, idx) => {
-            const isPremium = plan.title === "প্রিমিয়াম প্যাকেজ";
-
             return (
-              <div
-                key={idx}
-                className={`relative flex flex-col h-[600px] border p-6 transition-all`}
-              >
+              <div key={idx} className={`relative flex flex-col h-160 border p-6 transition-all`}>
                 {/* Header */}
                 <div className="bg-linear-to-br from-[#ad46ff] to-[#5c9e70] p-4 mb-4">
-                  <h3 className="text-white text-2xl font-semibold mb-2">{plan.title}</h3>
-                  <p className="text-white/80 mb-4 text-sm">{plan.description}</p>
+                  <div className='space-y-4 py-2'>
+                    <h3 className="text-white text-2xl font-semibold">{plan.title}</h3>
+                    <p className="text-white/80 text-2xl font-bold">{plan.price}</p>
+                  </div>
+                  <p className="text-white/80 text-sm">{plan.description}</p>
                 </div>
 
                 {/* Features - scrollable */}
@@ -49,9 +51,7 @@ export default function Package() {
                       )}
                       <span
                         className={
-                          feature.included
-                            ? "text-gray-800"
-                            : "text-gray-400 line-through"
+                          feature.included ? 'text-gray-800' : 'text-gray-400 line-through'
                         }
                       >
                         {feature.text}
@@ -61,7 +61,7 @@ export default function Package() {
                 </ul>
 
                 {/* CTA */}
-                <Link href={"https://softypy.com/contact"} target="_blank">
+                <Link href={'https://softypy.com/contact'} target="_blank">
                   <LinearButton title="শুরু করুন" icon={<ArrowRight />} iconAlign="right" />
                 </Link>
               </div>
